@@ -84,8 +84,8 @@ class Owner
   def list_pets
     dog_counter = 0 
     cat_counter = 0
-    @cats.each {|cat| cat_counter += 1}
-    @dogs.each {|dog| dog_counter += 1}
+    cats.each {|cat| cat_counter += 1}
+    dogs.each {|dog| dog_counter += 1}
     "I have #{dog_counter} dog(s), and #{cat_counter} cat(s)."
   end  
 end
