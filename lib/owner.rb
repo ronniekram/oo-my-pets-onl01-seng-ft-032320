@@ -33,8 +33,13 @@ class Owner
   end 
   
   def cats
-    binding.pry
-    Cat.all.each {|cat| cat.name}
+    my_cats = []
+    Cat.all.each |cat|
+      if cat.owner == self 
+        my_cats << cat 
+      end 
+    end 
+    my_cats
   end 
   
   def dogs 
