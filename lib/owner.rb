@@ -73,10 +73,12 @@ class Owner
   def sell_pets
     cats.map do |cat|
       cat.mood = "nervous"
+      cat.owner = nil
     end
     
     dogs.map do |dog|
       dog.mood = "nervous"
+      dog.owner = nil
     end 
   end
   
